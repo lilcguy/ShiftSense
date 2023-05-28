@@ -32,7 +32,7 @@ var endInput = document.getElementById("end"); //end time form
 var locationInput = document.getElementById("location"); //location form
 var employeeInput = document.getElementById("employee"); // employee assignment form
 
-var forms = [dateInput, startInput, endInput, locationInput, employeeInput]; //i feel like a fuckin genius
+var forms = [dateInput, startInput, endInput, locationInput, employeeInput]; //i feel like a genius
 
 var createShiftButton = document.getElementById("create"); //create shift button
 
@@ -47,15 +47,15 @@ var shift = { //redundant?
 };
 
 function createShift() { //create shift function
-    //console.log(dateInput.value, startInput.value, endInput.value, locationInput.value, employeeInput.value); //getting all information from inputs correctly.
+        //console.log(dateInput.value, startInput.value, endInput.value, locationInput.value, employeeInput.value); //getting all information from inputs correctly.
 
-    for (let i=0; i < forms.length; i++) { //i feel like a fuckin genius
+    for (let i=0; i < forms.length; i++) { //collects data from forms, displays them, and adds them to the appropriate div
         let userInput = document.createElement("h1");
         userInput.innerHTML = forms[i].value;
         shiftContainer.appendChild(userInput);
-    }
+    };
 
-    for (let i=0; i < forms.length; i++) { //i feel like a fuckin genius
+    for (let i=0; i < forms.length; i++) { // clears input forms
         forms[i].value = "";
     };
 
