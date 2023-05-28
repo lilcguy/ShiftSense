@@ -48,12 +48,17 @@ var shift = { //redundant?
 
 function createShift() { //create shift function
         //console.log(dateInput.value, startInput.value, endInput.value, locationInput.value, employeeInput.value); //getting all information from inputs correctly.
-
-    for (let i=0; i < forms.length; i++) { //collects data from forms, displays them, and adds them to the appropriate div
-        let userInput = document.createElement("h1");
+let shiftDiv = document.createElement("div");
+    
+for (let i=0; i < forms.length; i++) { //collects data from forms, displays them, and adds them to the appropriate div(s)
+        
+    let userInput = document.createElement("h1");
         userInput.innerHTML = forms[i].value;
-        shiftContainer.appendChild(userInput);
+            shiftDiv.appendChild(userInput);
+            //shiftContainer.appendChild(shiftDiv);
     };
+    
+shiftContainer.appendChild(shiftDiv);
 
     for (let i=0; i < forms.length; i++) { // clears input forms
         forms[i].value = "";
