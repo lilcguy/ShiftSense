@@ -38,13 +38,13 @@ var createShiftButton = document.getElementById("create"); //create shift button
 
 var shiftContainer = document.getElementById("shifts"); //holds all created shifts
 
-var shift = { //redundant?
-    date: dateInput.value,
-    start: startInput.value,
-    end: endInput.value,
-    location: locationInput.value,
-    employee: employeeInput.value
-};
+// var shift = { //redundant?
+//     date: dateInput.value,
+//     start: startInput.value,
+//     end: endInput.value,
+//     location: locationInput.value,
+//     employee: employeeInput.value
+// };
 
 function createShift() { //create shift function
         //console.log(dateInput.value, startInput.value, endInput.value, locationInput.value, employeeInput.value); //getting all information from inputs correctly.
@@ -72,7 +72,9 @@ for (let i=0; i < forms.length; i++) { // clears input forms
 
 createShiftButton.addEventListener("click", createShift);
 
-
+//note:
+//for loops may need to be poo-pooed. somehow, someway, I need to make it obvious that the information
+//corresponds. that is to say, it makes sense what information is what and belongs to what category.
 
 
 
